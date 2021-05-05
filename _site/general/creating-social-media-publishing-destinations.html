@@ -1,0 +1,692 @@
+﻿<!doctype html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>建立社交媒體出版目的地</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><span class="product-logo" style="font-family:'Balto Web','Public Sans';font-size:2em;font-weight:bold;">布萊特灣社會<sup>™</sup></span></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">選擇語言</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+      <option value="">其他布萊特灣文件</option>
+      
+        
+          <option value="https://support.brightcove.com">文件首頁</option>
+        
+      
+        
+          <option value="https://audience.support.brightcove.com">布萊特灣觀眾</option>
+        
+      
+        
+          <option value="https://beacon.support.brightcove.com">布萊特灣燈塔</option>
+        
+      
+        
+          <option value="https://campaign.support.brightcove.com">布萊特灣戰役</option>
+        
+      
+        
+          <option value="https://engage.support.brightcove.com">布萊特灣參與</option>
+        
+      
+        
+          <option value="https://live.support.brightcove.com">Brightcove Live</option>
+        
+      
+        
+          <option value="https://gallery.support.brightcove.com">Brightcove 圖庫</option>
+        
+      
+        
+          <option value="https://ssai.support.brightcove.com">布萊特灣</option>
+        
+      
+        
+          <option value="https://social.support.brightcove.com">布萊特灣社會</option>
+        
+      
+        
+          <option value="https://studio.support.brightcove.com">視訊雲端工作室</option>
+        
+      
+        
+          <option value="https://player.support.brightcove.com">布萊特灣球員開發</option>
+        
+      
+        
+          <option value="https://apis.support.brightcove.com">視訊雲端平台 API</option>
+        
+      
+        
+          <option value="https://sdks.support.brightcove.com">視訊雲端裝置開發套件</option>
+        
+      
+        
+          <option value="https://integrations.support.brightcove.com">整合與 CMS 連接器</option>
+        
+      
+        
+          <option value="https://general.support.brightcove.com">視訊雲端一般資訊</option>
+        
+      
+        
+          <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+        
+      
+    </select>
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="支持"/>聯繫支持</a><span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span><a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="系統狀態"/>系統狀況</a></span><br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">首頁</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/general/">一般資訊</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">建立社交媒體出版目的地</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">首頁</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/index.html">開始使<strong>用 + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-social.html">開始使用受眾</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/social-training-videos.html">社交訓練影片</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general/index.html">一般資訊<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/creating-social-media-publishing-destinations.html">建立發佈目的地</a></li>
+                  
+                
+                  
+                    <li><a href="/general/creating-video-clip-using-brightcove-social.html">建立視訊片段</a></li>
+                  
+                
+                  
+                    <li><a href="/general/publishing-videos-social-media-platforms.html">將影片發佈至社交媒體</a></li>
+                  
+                
+                  
+                    <li><a href="/general/setting-privacy-status-video.html">設定影片的隱私權狀態</a></li>
+                  
+                
+                  
+                    <li><a href="/general/using-auto-sync-synchronize-videos-social-media-accounts.html">使用自動同步</a></li>
+                  
+                
+                  
+                    <li><a href="/general/viewing-videos-published-social-media.html">檢視發佈至社交媒體的影片</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/analytics/index.html">檢閱分析<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/analytics/reviewing-social-analytics.html">檢閱社交分析</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/reviewing-social-engagement-analytics.html">檢閱社交參與分析</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/reviewing-social-views-analytics.html">檢閱社交檢視分析</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/develop/index.html">開發人員<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/develop/overview-social-api.html">概述：社交 API </a></li>
+                  
+                
+                  
+                    <li><a href="/develop/quick-start-social-api.html">快速入門：社交 API </a></li>
+                  
+                
+                  
+                    <li><a href="/develop/reference.html">社交 API 參考</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/social-api-error-reference.html">社交 API：錯誤參考</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html">支援<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">檢視布萊特灣系統狀態頁面</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">聯絡銷售人員</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">開啟支援案例</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="導覽功能表"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">頁面內容</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="在新分頁中開啟" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+
+  
+    
+
+
+<article class="bcls-article">
+  <h1>建立社交媒體出版目的地</h1>
+  <summary>在本主題中，您將學習如何使用 Brightcove Social 建立發佈目的地。</summary>
+  <section class="bcls-section">
+    <div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="5017980985001">&nbsp;</div>
+    <script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script>
+    <p>發佈目的地是您希望發佈 Video Cloud 影片的社交媒體帳戶/頁面。您必須先建立至少一個目的地，才能使用 Brightcove Social 將影片發佈至社交媒體帳戶。可以創建目的地，將視頻發佈到 YouTube，臉書和推特。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="youtube">建立 YouTube 目的地</h2>
+    <p>當您想要將影片發佈至 YouTube 頻道時，建立 YouTube 的目的地。在創建YouTube目標之前，您可能需要<a href="https://www.youtube.com/verify">驗證您的YouTube帳戶</a>。驗證您的帳戶後，您將能夠上傳超過 15 分鐘的影片。</p>
+    <p>如要建立 YouTube 目的地，請按照下列步驟操作。</p>
+    <ol class="bcls-tasklist-restart">
+      <li>布萊特灣社交公園</li>
+      <li>按一下左側導覽中的「<strong>目</strong>的地」。</li>
+      <li>按一下「<strong>新增目標</strong>」。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-add-destination.png"/></figure>
+      </li>
+      <li>請點擊<strong>使用YouTube登錄</strong>。</li>
+      <li>系統會提示您登入 Google 帳戶 (如果尚未登入)。如果您有多個帳戶，請務必登入與 YouTube 頻道相關聯的帳戶。</li>
+      <li>系統會開啟一個對話方塊，要求管理您的 YouTube 帳戶的權限。請檢查對話方塊右上角，確認您使用的是正確的 Google 帳戶。如果沒有，請使用下拉式清單來選取您要發佈影片的 Google 帳戶。按一下「<strong>允許</strong>」。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-auth-yt-dest.png"/></figure>
+      </li>
+      <li>為目的地提供唯一的描述性名稱。按一下「<strong>新增</strong>」。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-name-yt-dest.png"/></figure>
+      </li>
+      <li>將顯示基本資訊和目的地預設值。按一下「<strong>基本資訊</strong>」區段中的「編<strong>輯</strong>」按鈕，以編輯目的地名稱。見<a href="#youtube_defaults">設置YouTube默認值</a>部分提供有關配置默認值的信息。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-yt-dest-created.png"/></figure>
+      </li>
+      <li>按一下左邊界的 [目的<strong>地</strong> ]，確認目的地出現在目的地清單中。目的地名稱下方的值是目的地識別碼。</li>
+    </ol>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-yt-dest-added.png"/></figure>
+    <p>點擊<strong>目的地名稱</strong>編輯目的地。點擊鏈接<strong>頻道/頁面</strong>列以在另一個瀏覽器標籤中打開YouTube頻道。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="youtube_defaults">設定 YouTube 預設值</h2>
+    <p>將視訊<a href="/general/publishing-videos-social-media-platforms.html">發佈至社交平台</a>時，目的地預設值將用作預設視訊屬性。要為YouTube目標配置發布默認設置，請單擊目標名稱，然後單擊<strong>編輯</strong>在裡面<strong>此目的地的默認值</strong>部分。您可以設定下列視訊屬性：</p>
+    <ul>
+      <li><a href="#ytpostinfo">貼文資訊</a></li>
+      <li><a href="#ytschedule">排程</a></li>
+      <li><a href="#ytcaptions">標題</a></li>
+      <li><a href="#ytvisibility">可見性</a></li>
+      <li><a href="#ytlicense">授權</a></li>
+    </ul>
+    <div id="ytpostinfo" class="BCL-subsection">
+      <h3>設定貼文資訊屬性</h3>
+      <p>點擊文<strong>章信息</strong>鏈接。您可以設定下列 YouTube 影片屬性：</p>
+      <ul>
+        <li><strong>描述</strong> -使用“視頻雲”的簡短描述或詳細描述或輸入要使用的默認描述的選項</li>
+        <li><strong>原始語言代碼</strong> -用於向視頻添加翻譯的視頻標題和描述；輸入2個字母的語言代碼，然後從列表中選擇</li>
+        <li><strong>影片類別</strong> -影片的內容類別</li>
+        <li><strong>標籤</strong> -選擇包括或排除視頻雲標籤</li>
+        <li><strong>將視頻雲元數據包含為YouTube標籤</strong> -選擇將視頻ID和參考ID包含為YouTube標籤</li>
+        <li><strong>附加標籤</strong> -選擇為視頻輸入其他標籤</li>
+        <li><strong>縮圖來源</strong> -使用YouTube縮略圖，視頻雲縮略圖或上傳自己的縮略圖的選項</li>
+      </ul>
+    </div>
+    <div id="ytschedule" class="BCL-subsection">
+      <h3>設定排程屬性</h3>
+      <p>點擊<strong>時間表</strong>鏈接並選擇計劃設置：</p>
+      <ul>
+        <li><strong>立即發布</strong> -要立即發布視頻</li>
+        <li><strong>使用視頻雲的開始日期</strong> -要使用為視頻設置的視頻雲開始日期。在這種情況下，我們會告訴 YouTube 將影片公開，以「影片雲端」中所指定的「排程開始日期」為止。如果該日期已經過去，YouTube 會立即將影片公開。</li>
+      </ul>
+      <aside class="bcls-aside bcls-aside--information">注意：擁有<a href="#ytvisibility">視頻可見度</a>設置<strong>不公開</strong>要么<strong>私人的</strong>，將<strong>時間表</strong>選擇<strong>立即發布</strong>並設置<strong>能見度</strong>選擇<strong>不公開</strong>要么<strong>私人的</strong>。</aside>
+    </div>
+    <div id="ytcaptions" class="BCL-subsection">
+      <h3>設定註解屬性</h3>
+      <p>點擊<strong>字幕</strong>鏈接並選擇一個選項：</p>
+      <ul>
+        <li><strong>使用視頻雲字幕</strong> -社交模塊將嘗試將與視頻相關的字幕分發給YouTube。無論字幕檔案在哪裡，Social 模組都會嘗試存取字幕檔案。如果使用遠程 URL 來指定標題文件的位置，並且文件可以訪問（例如，沒有地理限制的方式，我們無法訪問它們），則 Social 將分發它們到 YouTube。</li>
+        <li><strong>沒有字幕</strong> -不使用字幕</li>
+      </ul>
+      <aside class="bcls-aside bcls-aside--information">注意：如需在 Video Cloud 中使用字幕的相關資訊，請參閱<a href="https://studio.support.brightcove.com/media/overview-adding-captions-video.html">概觀：在影片中加入字幕</a>。</aside>
+    </div>
+    <div id="ytvisibility" class="BCL-subsection">
+      <h3>規劃可見性性質</h3>
+      <p>點擊<strong>能見度</strong>鏈接，然後選擇視頻的“隱私”設置。以下是可用的隱私權設定：</p>
+      <ul>
+        <li><strong>公開</strong> -任何人都可以觀看影片</li>
+        <li><strong>未公開</strong> -任何擁有影片連結的人都可以觀看</li>
+        <li><strong>私人</strong> -只有您和您選擇的使用者才能看到影片</li>
+        <li><strong>使用YT_Privacy_Status自定義字段</strong> -使用與視頻關聯的自定義字段動態分配隱私設置。如需詳細資訊，請參閱<a href="/general/setting-privacy-status-video.html">設定影片的隱私權狀態</a>。</li>
+      </ul>
+      <p>還有一個設置，<strong>當視頻發佈到 YouTube 時通知訂閱者</strong>。如果勾選此選項，訂閱者就會在他們的訂閱項目動態消息中看到您的影片，並可能會收到影片已上傳的通知。</p>
+      <aside class="bcls-aside bcls-aside--information">注意：如需 YouTube 隱私權設定的詳細資訊，請參閱<a href="https://support.google.com/youtube/answer/157177"> YouTube 說明文件</a>。</aside>
+    </div>
+    <div id="ytlicense" class="BCL-subsection">
+      <h3>配置授權屬性</h3>
+      <p>點擊<strong>執照</strong>鏈接，然後選擇視頻的許可和權利所有權設置。您可以使用下列設定：</p>
+      <ul>
+        <li>標準版 YouTube 授權</li>
+        <li>創用 CC-姓名標示</li>
+      </ul>
+      <aside class="bcls-aside bcls-aside--information">注意：如需有關 YouTube 授權和版權所有權的詳細資訊，請參閱<a href="https://support.google.com/youtube/answer/2797468"> YouTube 說明文件</a>。</aside>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="facebook">建立臉書目的地</h2>
+    <p>當您想要將影片發佈至臉書頁面時，建立 Facebook 的目的地。請注意，影片只能發佈到 Facebook 頁面，而不能發佈個人檔案頁面。若要建立 Facebook 目的地，請依照下列步驟操作。</p>
+    <ol class="bcls-tasklist-restart">
+      <li>布萊特灣社交公園</li>
+      <li>按一下左側導覽中的「<strong>目</strong>的地」。</li>
+      <li>按一下「<strong>新增目標</strong>」。</li>
+      <li>請點擊<strong>用Facebook登錄</strong>。</li>
+      <li>系統會開啟一個對話方塊，要求您登入您的 Facebook 帳戶。輸入您的憑據，然後單擊<strong>登錄</strong>。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-auth-fb-dest.png"/></figure>
+      </li>
+      <li>將會開啟一個對話方塊，確認 Brightcove Social 會收到您的個人檔案資訊。按一下「<strong>繼續</strong>」。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-auth-fb-dest1.png"/></figure>
+      </li>
+      <li>將會開啟一個對話方塊，確認 Brightcove Social 能夠管理和發佈您的網頁，並存取您的頁面和應用程式深入解析。按一下「<strong>確定」</strong>。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-auth-fb-dest2.png"/></figure>
+      </li>
+      <li>為目的地提供唯一的描述性名稱。如果您有多個Facebook頁面，請使用下拉列表選擇要發布的頁面，然後單擊<strong>加</strong>。
+        <aside class="bcls-aside bcls-aside--information">注意：您無法將影片發佈到個人檔案頁面。</aside>
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-name-fb-dest.png"/></figure>
+      </li>
+      <li>將顯示基本資訊和目的地預設值。按一下「<strong>基本資訊</strong>」區段中的「編<strong>輯</strong>」按鈕，以編輯目的地名稱。見<a href="#facebook_defaults">設置Facebook默認值</a>部分提供有關配置默認值的信息。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-fb-dest-created.png"/></figure>
+      </li>
+      <li>按一下左邊界的 [目的<strong>地</strong> ]，確認目的地出現在目的地清單中。目的地名稱下方的值是目標識別碼。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-fb-dest-added.png"/></figure>
+      </li>
+    </ol>
+    <p>按一下目標名稱以編輯目的地。按一下「通道/頁面」欄中的連結，在其他瀏覽器標籤中開啟 Facebook 頁面。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="facebook_defaults">設定臉書預設值</h2>
+    <p>將視訊<a href="/general/publishing-videos-social-media-platforms.html">發佈至社交平台</a>時，目的地預設值將用作預設視訊屬性。要配置Facebook目標的發布默認設置，請單擊目標名稱，然後單擊<strong>編輯</strong>在裡面<strong>此目的地的默認值</strong>部分。您可以設定下列臉書視訊屬性：</p>
+    <ul>
+      <li><a href="#fbpostinfo">貼文資訊</a></li>
+      <li><a href="#fbschedule">排程</a></li>
+      <li><a href="#fbcaptions">標題</a></li>
+      <li><a href="#fbtargeting">目標</a></li>
+      <li><a href="#fbmonetize">營利</a></li>
+      <li><a href="#fbrights">權利</a></li>
+      <li><a href="#fbdistribution">分佈</a></li>
+      <li><a href="#fbtracking">追蹤</a></li>
+    </ul>
+    <div id="fbpostinfo" class="BCL-subsection">
+      <h3>設定貼文資訊屬性</h3>
+      <p>點擊文<strong>章信息</strong>鏈接。您可以設定下列臉書視訊屬性：</p>
+      <ul>
+        <li><strong>狀態消息</strong> -使用“視頻雲”的簡短描述或詳細描述或輸入要使用的默認描述的選項</li>
+        <li><strong>標籤</strong> -幫助人們發現您的視頻的標籤</li>
+        <li><strong>臉書類別</strong> -影片內容類別</li>
+        <li><strong>縮圖來源</strong> -使用Facebook縮略圖，視頻雲縮略圖或上傳自己的縮略圖的選項</li>
+      </ul>
+    </div>
+    <div id="fbschedule" class="BCL-subsection">
+      <h3>設定排程屬性</h3>
+      <p>點擊<strong>時間表</strong>鏈接。選擇<strong>立即發布</strong>立即發布視頻或選擇<strong>使用視頻雲的開始日期</strong>使用為視頻設置的開始日期。你也可以<strong>永不過期的帖子</strong>或有<strong>帖子在Video Cloud結束日期過期</strong>。</p>
+    </div>
+    <div id="fbcaptions" class="BCL-subsection">
+      <h3>設定註解屬性</h3>
+      <p>點擊<strong>字幕</strong>鏈接。選擇<strong>使用視頻雲字幕</strong>使用與視頻相關的字幕，或<strong>沒有字幕</strong>不使用字幕。</p>
+      <aside class="bcls-aside bcls-aside--information">注意：如需在 Video Cloud 中使用字幕的相關資訊，請參閱<a href="https://studio.support.brightcove.com/media/overview-adding-captions-video.html">概觀：在影片中加入字幕</a>。</aside>
+    </div>
+    <div id="fbtargeting" class="BCL-subsection">
+      <h3>設定目標特性</h3>
+      <p>點擊<strong>目標</strong>鏈接。可以設定下列屬性：</p>
+      <ul>
+        <li><strong>觀眾優化興趣</strong> -添加標籤來描述最有可能喜歡您的帖子的人的興趣。有關信息，請參閱<a href="https://www.facebook.com/facebookmedia/get-started/audience-optimization">Facebook文件</a>。</li>
+        <li><strong>位置限制</strong> -新增要包含或排除在看到貼文的國家/地區</li>
+      </ul>
+    </div>
+    <div id="fbmonetize" class="BCL-subsection">
+      <h3>設定營利屬性</h3>
+      <p>點擊<strong>營利</strong>鏈接。可以設定下列屬性：</p>
+      <ul>
+        <li><strong>誰是您的業務合作夥伴來發佈到這個目的地？</strong> -為品牌內容貼文新增商業合作夥伴。當您輸入時，會出現符合的商家清單。有關Facebook品牌內容的信息，請參閱<a href="https://www.facebook.com/business/help/788160621327601">Facebook文件</a>。</li>
+        <li><strong>允許商業合作夥伴提升貼文</strong></li>
+      </ul>
+    </div>
+    <div id="fbrights" class="BCL-subsection">
+      <h3>配置權限屬性</h3>
+      <aside class="bcls-aside bcls-aside--information">注意：您的 Facebook 帳戶必須能夠存取 Facebook 版權管理員，才能顯示 [權限] 選項。</aside>
+      <p>點擊<strong>權利</strong>鏈接。可以設定下列屬性：</p>
+      <ul>
+        <li><strong>偵測符合的內容</strong> -勾選以啟用 Facebook 版權管理。有關信息，請參閱<a href="https://rightsmanager.fb.com">Facebook文件</a>。</li>
+        <li><strong>指定擁有</strong>權-指定視訊、音訊或兩者的版權擁有權</li>
+        <li><strong>國家選擇-選</strong>取「<strong>全球</strong>」、「<strong>包括國家</strong>」或「<strong>排除國家</strong>」。如果選取了「包含」或「排除」，則新增「<strong>位置限制</strong>」。</li>
+        <li><strong>套用比對規則</strong> -選取規則。「<strong>比對規則</strong>」會決定使用者上傳符合的影片時，自動執行的動作。比賽規則在臉書內部進行管理。</li>
+        <li>授<strong>予權限</strong> -授權特定使用者或頁面或 Instagram 帳戶，以允許張貼符合您內容的影片。</li>
+      </ul>
+    </div>
+    <div id="fbdistribution" class="BCL-subsection">
+      <h3>設定發佈屬性</h3>
+      <p>點擊<strong>分配</strong>鏈接設置可以在哪裡觀看視頻。以下<strong>自定義分發和審核</strong>選項可用：</p>
+      <ul>
+        <li><strong>在新聞摘要中顯</strong>示-在新聞摘要中顯示影片</li>
+        <li><strong>允許內嵌</strong> -允許在第三方網站上嵌入視訊</li>
+        <li><strong>添加為秘密視頻-視頻</strong>只能通過直接 URL 訪問，無法在 Facebook 上搜索的人
+          <ul>
+            <li><strong>關閉反應、評論和分享</strong> -不允許喜歡和評論</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="fbtracking" class="BCL-subsection">
+      <h3>設定追蹤屬性</h3>
+      <p>點擊<strong>追踪</strong>鏈接以分配通用ID，以跨系統跟踪視頻。以下是可用的<strong>通用 ID </strong>選項：</p>
+      <ul>
+        <li>保留空白</li>
+        <li>使用 Video Cloud 的視訊 ID</li>
+        <li>使用 Video Cloud 的參考 ID (如有)</li>
+      </ul>
+    </div>
+  </section>
+  <section class="bcls-section">
+    <h2 id="twitter">創建一個推特目的地</h2>
+    <p>當您想要將影片發佈至 Twitter 動態消息時，請建立 Twitter 的目的地。若要建立 Twitter 目的地，請依照下列步驟執行。</p>
+    <ol class="bcls-tasklist-restart">
+      <li>布萊特灣社交公園</li>
+      <li>按一下左側導覽中的「<strong>目</strong>的地」。</li>
+      <li>按一下「<strong>新增目標</strong>」。</li>
+      <li>選擇<strong>使用Twitter登錄</strong>。</li>
+      <li>系統會提示您登入您的 Twitter 帳戶，並授權布萊特灣社群使用您的帳戶。登入您想要發佈影片的帳戶。如果系統未提示您登入，您可能會登入 Twitter 帳戶。請確認您已登入正確的帳號，然後再繼續進行。請點擊<strong>授權應用</strong>。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-auth-twitter-dest.png"/></figure>
+      </li>
+      <li>為目的地提供唯一的描述性名稱。按一下「<strong>新增</strong>」。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-name-twitter-dest.png"/></figure>
+      </li>
+      <li>將顯示基本資訊和目的地預設值。按一下「<strong>基本資訊</strong>」區段中的「編<strong>輯</strong>」按鈕，以編輯目的地名稱。見<a href="#twitter_defaults">設置Twitter默認值</a>部分提供有關配置默認值的信息。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-twitter-dest-created.png"/></figure>
+      </li>
+      <li>按一下左邊界的 [目的<strong>地</strong> ]，確認目的地出現在目的地清單中。目的地名稱下方的值是目標識別碼。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-twitter-dest-added.png"/></figure>
+      </li>
+    </ol>
+    <p>按一下目標名稱以編輯目的地。按一下「通道/頁面」欄中的連結，在其他瀏覽器標籤中開啟 Twitter 帳戶。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="twitter_defaults">設定推特預設值</h2>
+    <p>將視訊<a href="/general/publishing-videos-social-media-platforms.html">發佈至社交平台</a>時，目的地預設值將用作預設視訊屬性。要為Twitter目標配置發布默認設置，請單擊目標名稱，然後單擊<strong>編輯</strong>在裡面<strong>此目的地的默認值</strong>部分。</p>
+    <p>配置默認<strong>推文內容</strong>：</p>
+    <ul>
+      <li>使用視訊雲端中的影片名稱</li>
+      <li>從視訊雲端使用 TW_Tweet 自訂欄位</li>
+      <li>設定自訂預設推文</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="delete">刪除目的地</h2>
+    <p>若要刪除目的地，請依照下列步驟執行：</p>
+    <ol class="bcls-tasklist-restart">
+      <li>布萊特灣社交公園</li>
+      <li>按一下左側導覽中的「<strong>目</strong>的地」。目的地清單隨即出現。</li>
+      <li>按一下要刪除的目的地名稱。</li>
+      <li>將顯示目的地詳細資訊。點擊刪除圖標（<img alt="" src="/assets/images/general/node16345-delete-dest.png"/>）<strong></strong>然後點擊<strong>刪除</strong>確認刪除。</li>
+    </ol>
+    <aside class="bcls-aside bcls-aside--information">注意：如果已建立使用目的地的自動同步工作，則不會顯示刪除圖示。您必須先移除「自動同步」工作，才能刪除目的地。</aside>
+  </section>
+  <section class="bcls-section">
+    <h2 id="reconnect">重新連線至目的地</h2>
+    <p>如果目的地有問題，布萊特灣 Social 將顯示錯誤訊息。</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/general/node16345-error-message.png"/></figure>
+    <p>錯誤圖標（<img alt="" src="/assets/images/general/node16345-error-icon.png"/>）將顯示在目的地名稱旁邊。如果 Brightcove 權限已從社交媒體帳戶中移除，或者建立目的地時所使用的認證不再有效，就可能發生這種情況。若要解決此問題：</p>
+    <ol class="bcls-tasklist-restart">
+      <li>按一下目標名稱。</li>
+      <li>點擊<strong>重新連線</strong>頁面頂部的鏈接。</li>
+      <li>系統可能會提示您使用社交媒體帳戶重新驗證。</li>
+    </ol>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">頁面內容</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="bcls-footer" role="contentinfo">  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>布萊特灣支援</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">系統狀態</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡支援</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">文獻資料</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>訓練</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">線上課程</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">註冊課程</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">布萊特灣大學</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">亮麗</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 布萊特灣公司版權所有</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">私隱</a> | 條<a href="https://www.brightcove.com/en/terms-and-conditions">款及細則</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>

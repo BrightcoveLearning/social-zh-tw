@@ -1,0 +1,485 @@
+﻿<!doctype html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>審核社交觀點分析</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><span class="product-logo" style="font-family:'Balto Web','Public Sans';font-size:2em;font-weight:bold;">布萊特灣社會<sup>™</sup></span></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">選擇語言</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+Brightcove 
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="支持"/>聯繫支持</a><span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span><a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="系統狀態"/>系統狀況</a></span><br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">首頁</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/analytics/">分析</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">審核社交觀點分析</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        				<select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+					<option value="">其他布萊特灣文件</option>
+					
+						
+							<option value="https://support.brightcove.com">文件首頁</option>
+						
+					
+						
+							<option value="https://audience.support.brightcove.com">布萊特灣觀眾</option>
+						
+					
+						
+							<option value="https://beacon.support.brightcove.com">布萊特灣燈塔</option>
+						
+					
+						
+							<option value="https://campaign.support.brightcove.com">布萊特灣戰役</option>
+						
+					
+						
+							<option value="https://engage.support.brightcove.com">布萊特灣參與</option>
+						
+					
+						
+							<option value="https://live.support.brightcove.com">Brightcove Live</option>
+						
+					
+						
+							<option value="https://gallery.support.brightcove.com">Brightcove 圖庫</option>
+						
+					
+						
+							<option value="https://ssai.support.brightcove.com">布萊特灣</option>
+						
+					
+						
+							<option value="https://social.support.brightcove.com">布萊特灣社會</option>
+						
+					
+						
+							<option value="https://studio.support.brightcove.com">視訊雲端工作室</option>
+						
+					
+						
+							<option value="https://player.support.brightcove.com">布萊特灣球員開發</option>
+						
+					
+						
+							<option value="https://apis.support.brightcove.com">視訊雲端平台 API</option>
+						
+					
+						
+							<option value="https://sdks.support.brightcove.com">視訊雲端裝置開發套件</option>
+						
+					
+						
+							<option value="https://integrations.support.brightcove.com">整合與 CMS 連接器</option>
+						
+					
+						
+							<option value="https://general.support.brightcove.com">視訊雲端一般資訊</option>
+						
+					
+						
+							<option value="https://zencoder.support.brightcove.com">Zencoder</option>
+						
+					
+				</select>
+						<nav class="sidenav" id="side_nav">
+
+          
+            
+            <h5><a href="/index.html">首頁</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/index.html">開始使<strong>用 + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-social.html">開始使用受眾</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/social-training-videos.html">社交訓練影片</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general/index.html">一般資訊<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general/creating-social-media-publishing-destinations.html">建立發佈目的地</a></li>
+                  
+                
+                  
+                    <li><a href="/general/creating-video-clip-using-brightcove-social.html">建立視訊片段</a></li>
+                  
+                
+                  
+                    <li><a href="/general/publishing-videos-social-media-platforms.html">將影片發佈至社交媒體</a></li>
+                  
+                
+                  
+                    <li><a href="/general/setting-privacy-status-video.html">設定影片的隱私權狀態</a></li>
+                  
+                
+                  
+                    <li><a href="/general/using-auto-sync-synchronize-videos-social-media-accounts.html">使用自動同步</a></li>
+                  
+                
+                  
+                    <li><a href="/general/viewing-videos-published-social-media.html">檢視發佈至社交媒體的影片</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/analytics/index.html">檢閱分析<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/analytics/reviewing-social-analytics.html">檢閱社交分析</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/reviewing-social-engagement-analytics.html">檢閱社交參與分析</a></li>
+                  
+                
+                  
+                    <li><a href="/analytics/reviewing-social-views-analytics.html">檢閱社交檢視分析</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/develop/index.html">開發人員<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/develop/overview-social-api.html">概述：社交 API </a></li>
+                  
+                
+                  
+                    <li><a href="/develop/quick-start-social-api.html">快速入門：社交 API </a></li>
+                  
+                
+                  
+                    <li><a href="/develop/reference.html">社交 API 參考</a></li>
+                  
+                
+                  
+                    <li><a href="/develop/social-api-error-reference.html">社交 API：錯誤參考</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html">支援<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">檢視布萊特灣系統狀態頁面</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">聯絡銷售人員</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">開啟支援案例</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="導覽功能表"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">頁面內容</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="在新分頁中開啟" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+
+  
+    
+
+
+<article class="bcls-article">
+  <h1>審核社交觀點分析</h1>
+  <summary>在本主題中，您將學習如何使用 Brightcove Social 監控影片的社交觀看次數表現。</summary>
+  <section class="bcls-section">
+    <p>Brightcove Social 提供數個報告，可用來監控發佈到社交媒體帳戶的影片成效：</p>
+    <ul>
+      <li><strong>儀表板</strong> -概述了社交媒體帳戶上的視頻效果。有關信息，請參見<a href="/analytics/reviewing-social-analytics.html">審查社會分析</a>。</li>
+      <li><strong>社會觀點</strong> -提供共享到社交媒體帳戶的視頻的社交視圖的概述。本主題涵蓋。</li>
+      <li><strong>社會參與</strong> -提供與社交媒體帳戶共享的視頻的社交參與度（喜歡，分享，轉推等）的概述。有關信息，請參見<a href="/analytics/reviewing-social-engagement-analytics.html">回顧社會參與度分析</a>。</li>
+    </ul>
+    <p>開始於<a href="reviewing-social-analytics.html#timespan">選擇時間跨度</a>報告。要查看Social Views Analytics報告，請點擊<strong>社會觀點</strong>標籤在頁面頂部。</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="報告標籤" src="/assets/images/analytics/node16679-report-tabs.png"/></figure>
+    <p>「社交檢視分析報表」分類為下列各節：</p>
+    <ul>
+      <li><a href="#socialviews">社會觀點</a></li>
+      <li><a href="#viewsdetail">社會觀點詳情</a></li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="socialviews">社交檢視</h2>
+    <p>社交觀看次數圖表會顯示在所選期間內張貼至社交媒體帳戶的影片觀看次數。更新日期是Video Cloud擁有社交分析數據的最新日期。通常，社交平台在更新其API中的視圖和互動數據之前會有24-48小時的延遲。</p>
+    <aside class="bcls-aside bcls-aside--information">注意：Twitter Insights API不會報告媒體觀看次數，因此查看數據不可用作社交分析的一部分。</aside>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="社交檢視圖表" src="/assets/images/analytics/node16679-video-views-graph.png"/></figure>
+    <p>圖右側的圖例可用於選擇要顯示的詳細程度：</p>
+    <ul>
+      <li><strong>我的網站和應用</strong> -顯示來自Video Cloud播放器和應用的視頻觀看次數</li>
+      <li><strong>臉書</strong> -顯示Facebook上的視頻觀看次數</li>
+      <li><strong>的YouTube</strong> -顯示YouTube上的視頻觀看次數</li>
+      <li><strong>總</strong> -顯示所有平台上的視頻觀看總數</li>
+    </ul>
+    <p>將鼠標懸停在圖形中的一條線上將顯示該日期的數據。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="viewsdetail">社交檢視詳細資料</h2>
+    <p>「社交檢視詳細資料」區段可用來檢視視訊檢視詳細資訊，方法如下：</p>
+    <ul>
+      <li>視圖 (預設)</li>
+      <li>平均觀看時間</li>
+      <li>平均觀看百分比</li>
+    </ul>
+    <p>選取完成後，報表會顯示每個視訊的詳細資料。</p>
+    <aside class="bcls-aside bcls-aside--information">注意：Twitter Insights API不會報告媒體觀看次數，因此查看數據不可用作社交分析的一部分。</aside>
+    <p>分析報告中顯示的YouTube觀看次數是從<a href="https://youtube.com/analytics">YouTube分析工具概述</a>報告。YouTube不保證此數據為實時數據。因此，您可能會看到幾天的延遲，然後視圖和參與活動才會出現在此報告中。數據進入YouTube Analytics（分析）後，它將由每晚的數據收集者為Brightcove Social Analytics提取。</p>
+    <p>如果您需要更多最新的實時觀看數據，YouTube還可以提供<a href="https://support.google.com/youtube/answer/6096647">實時報告</a>並估算過去48小時內您最近發布的前25個視頻的觀看數據。您可以找到有關您的YouTube頻道的實時報告<a href="https://www.youtube.com/analytics?o=U#r=realtime">這裡</a>。Brightcove Social Analytics 不會收集這項即時資料，因為它提供估計觀看次數 (與實際值相對)，且僅適用於最近的影片。</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="依影片分類的社交檢視" src="/assets/images/analytics/node16679-video-views-detail.png"/></figure>
+    <p>報告底部有控件，可讓您選擇應顯示多少行以及導航到其他頁面。按一下任何影片標題的連結，即可顯示所選影片的社交觀看次數分析。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="faq">常見問題</h2>
+    <p>1.如果使用 Social 模組將影片發佈到 YouTube，然後將該影片嵌入另一個網站的 YouTube 播放器中，播放/參與資料仍會收集並傳遞給 Social 模組分析嗎？</p>
+    <p>社交數據分析會收集 YouTube 報告的所有觀看資料，與您的創作者工作室和/或 YouTube 上的數據分析頁面一樣。如果 YouTube 內嵌播放器觀看次數計入您的分析數據，Social 模組就會擷取並進行報告。使用YouTube的嵌入代碼<strong>分享&gt;嵌入</strong>完全符合給定的功能會導致該嵌入式播放器的觀看次數計入您在YouTube中的分析。不過，編輯內嵌程式碼可能會導致 YouTube 無法收集觀看次數資料，特別是將嵌入式播放器設定為自動播放影片，似乎導致 YouTube 無法計算該播放器的觀看次數。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="export">匯出資料</h2>
+    <p>報告數據可以以逗號分隔的值和Excel格式下載。請注意，導出功能可直接從<span translate="No">Analytics API</span>呼叫。導出的數據未按UI數據的方式進行操作，並且當前包含報表中的所有基礎數據，而不僅僅是UI顯示的字段子集。使用API中的原始格式保存所有數據後，您就可以使用UI中未提供的其他方式來處理數據。</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="匯出資料" src="/assets/images/analytics/node16680-export.png"/></figure>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">頁面內容</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<footer class="bcls-footer" role="contentinfo">  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>布萊特灣支援</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">系統狀態</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡支援</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">文獻資料</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>訓練</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">線上課程</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">註冊課程</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">布萊特灣大學</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">亮麗</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 布萊特灣公司版權所有</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">私隱</a> | 條<a href="https://www.brightcove.com/en/terms-and-conditions">款及細則</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>
