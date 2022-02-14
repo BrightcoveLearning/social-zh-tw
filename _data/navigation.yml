@@ -1,0 +1,63 @@
+- section:
+  name: 首頁
+  url: /index.html
+- section:
+  name: 入門
+  url: /get-started/index.html
+  icon: '<img class="bcls-icon" src="/assets/images/feather/play.svg">'
+  docs:
+    - name: 社交入門
+      url: /get-started/getting-started-brightcove-social.html
+    - name: 社會培訓視頻
+      url: /get-started/social-training-videos.html
+- section:
+  name: 一般信息
+  icon: '<i data-feather="info"></i>'
+  url: /general/index.html
+  docs:
+    - name: 創建發布目標
+      url: /general/creating-social-media-publishing-destinations.html
+    - name: 創建視頻剪輯
+      url: /general/creating-video-clip-using-brightcove-social.html
+    - name: 將視頻發佈到社交媒體
+      url: /general/publishing-videos-social-media-platforms.html
+    - name: 設置視頻的隱私狀態
+      url: /general/setting-privacy-status-video.html
+    - name: 使用自動同步
+      url: /general/using-auto-sync-synchronize-videos-social-media-accounts.html
+    - name: 查看發佈到社交媒體的視頻
+      url: /general/viewing-videos-published-social-media.html
+- section:
+  name: 查看分析
+  url: /analytics/index.html
+  docs:
+    - name: 審查社會分析
+      url: /analytics/reviewing-social-analytics.html
+    - name: 回顧社會參與度分析
+      url: /analytics/reviewing-social-engagement-analytics.html
+    - name: 審查社交觀點分析
+      url: /analytics/reviewing-social-views-analytics.html
+- section:
+  name: 開發者
+  url: /develop/index.html
+  docs:
+    - name: '概述：社交API'
+      url: /develop/overview-social-api.html
+    - name: '快速開始：社交API'
+      url: /develop/quick-start-social-api.html
+    - name: '社交API參考'
+      url: /develop/reference.html
+    - name: '社交API：錯誤參考'
+      url: /develop/social-api-error-reference.html
+- section:
+  name: 支持
+  url: /support/index.html
+  docs:
+    - name: '查看Brightcove系統狀態頁面'
+      url: '/support/viewing-brightcove-system-status-page.html'
+    - name: '與銷售人員聯繫'
+      url: '/support/contact-sales.html'
+    - name: '打開支持案例'
+      url: '/support/opening-case-with-brightcove-support.html'
+    - name: '重置您的支持門戶密碼'
+      url: '/support/reset-support-portal-password.html'
